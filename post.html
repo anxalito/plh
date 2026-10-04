@@ -12,27 +12,37 @@
 * {
     margin: 0px;
 }
-body {
-    background-color: white; font-family: Inter; margin: 0px;}
-
+body { background-color: white; font-family: Inter; margin: 0px;}
 a { text-decoration: none;  color: hsl(72, 10%, 10%); font-size: 20px;}
 .caja {height: fit-content; max-width: 700px; justify-content: space-between; margin: 0px auto; border: solid black 0px;}
 .post {padding: 15px; display: flex; flex-direction: column; text-align: center; color: black; font-family: Playfair Display; font-size: 30px;}
-img {
-    margin: 8px; max-width: 100%;
+img {margin: 8px; max-width: 100%;}
+.parent {display: flex; height: auto; width: 100%; background-color: #ed1c24ff; text-decoration: none; top: 0px; z-index: 1000; flex-wrap: wrap; position: sticky;}
+.son {margin: 0px; border: 0px solid black; color: white; padding: 15px;}
+.son:hover{
+    background-color: rgb(173, 9, 14);
 }
-    </style>
+
+</style>
 </head>
 <body>
 
-<header style="max-height: 100px; height: fit-content; font-family: Instrument Serif; padding: 40px;
-display: flex; justify-content: center; align-items: center;text-align: center;"><a href="/plh/plh.html"><img height="auto" width="130px" src="https://raw.githubusercontent.com/anxalito/plh/refs/heads/main/anxal1.png"></a></header>
+<div class="parent">
+    <a href="https://anxal.cc" class="son">anxal.cc</a>
+    <a href="https://anxal.cc" class="son">Vault</a>
+    <a href="https://anxal.cc" class="son">Tmobi</a>
+    <a href="https://anxal.cc" class="son">Magnet</a>
+    <a href="https://anxal.cc" class="son">Docs</a>
+</div>
+
+
+<header style="max-height: 100px; height: fit-content; font-family: Instrument Serif;text-align: center; margin-bottom: 20px;"><a href="/plh/plh.html"><img height="auto" width="130px" src="anxal1.png"></a></header>
 
 <div class="caja">
     <div class="post">
     <a style="font-weight: bolder; font-size: xx-large; text-align: left;">Web en pruebas.</a>
     <a style="font-size:12pt; text-align: left;">3/10/26</a>
-    <a style="text-align: justify; margin-top: 10px; margin-bottom: 10px;">Página en construcción. Blog con elementos responsive.</a>
+    <a style="text-align: justify; margin-top: 10px; margin-bottom: 10px;">Página en construcción. Blog con elementos responsive. Barra de navegación simple position: sticky, top: 0px y z-index: 1000.</a>
     <iframe width="auto" height="315" src="https://www.youtube.com/embed/eK6mVIqxcpA?si=E7FdmAwGcb8M4Ydw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 </div>
@@ -59,7 +69,6 @@ display: flex; justify-content: center; align-items: center;text-align: center;"
     illo voluptatum, suscipit laboriosam!</a> 
     </div>
 </div>
-
 
 </body>
 </html>
