@@ -12,16 +12,24 @@
 * {
     margin: 0px;
 }
-body { background-color: white; font-family: Inter; margin: 0px;}
+body { background-color: white; font-family: Inter; margin: 20px;}
 a { text-decoration: none;  color: hsl(72, 10%, 10%); font-size: 20px;}
 .caja {height: fit-content; max-width: 700px; justify-content: space-between; margin: 0px auto; border: solid black 0px;}
 .post {padding: 15px; display: flex; flex-direction: column; text-align: center; color: black; font-family: Playfair Display; font-size: 30px;}
 img {margin: 8px; max-width: 100%;}
-.parent {display: flex; height: auto; width: 100%; background-color: #ed1c24ff; text-decoration: none; top: 0px; z-index: 1000; flex-wrap: wrap; position: sticky;}
+.parent {display: flex; height: auto; width: 100%; background-color: rgba(210, 12, 19, 0.651); text-decoration: none; top: 20px; z-index: 1000; flex-wrap: wrap; position: sticky; border-radius: 20px; 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);}
 .son {margin: 0px; border: 0px solid black; color: white; padding: 15px;}
 .son:hover{
-    background-color: rgb(173, 9, 14);
+    background-color: rgba(237, 28, 35, 0);
+    border-radius: 20px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
+
 
 </style>
 </head>
@@ -32,7 +40,6 @@ img {margin: 8px; max-width: 100%;}
     <a href="https://anxal.cc" class="son">Vault</a>
     <a href="https://anxal.cc" class="son">Tmobi</a>
     <a href="https://anxal.cc" class="son">Magnet</a>
-    <a href="https://anxal.cc" class="son">Docs</a>
 </div>
 
 
@@ -72,3 +79,4 @@ img {margin: 8px; max-width: 100%;}
 
 </body>
 </html>
+
